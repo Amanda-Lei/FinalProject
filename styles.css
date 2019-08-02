@@ -1,0 +1,457 @@
+*{
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 80%;
+}
+header{
+  background-color: #58089E;
+}
+.logo{
+  float: left;
+  padding: 10px 0;
+}
+nav{
+  float: right;
+}
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#g-i-r-l-s{
+  font-size: 60px;
+  text-align: center;
+  color: #58089E;
+  font-family: 'Damion', cursive;
+  background-color: white;
+  display: flex;
+  margin-top: 5%;
+  width: 800px;
+  justify-content: center;
+  margin-left: 30%;
+}
+nav li{
+  display: inline-block;
+  margin-left: 80px;
+  padding-top: 5%;
+  position:relative;
+}
+
+nav a{
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold
+}
+
+nav a:hover{
+  color: #000;
+  background-color:#505f90
+}
+
+nav a: before{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: rgba(42,60,118);
+  position: absolute;
+  top: 0;
+  width:  0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a: hover::before{
+  width: 100%;
+}
+
+#logo{
+  height: 120px;
+  width: 120px;
+}
+li{
+  font-size: 20px;
+}
+h3{
+  color: #E4AFFF;
+  text-align:center;
+}
+
+/* .everything{
+  justify-content: center;
+  border: 5px solid white;
+  /* margin: 10px;
+  padding: 5px;
+} */
+.intro-clear{
+  background-color: rgba(0,0,0,0);
+}
+#intro{
+  font-weight: bold;
+  background-color: white;
+  font-size: 25px;
+  text-align: center;
+  margin: 50px;
+}
+
+.columns {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  background-color: rgba(255,224,227);
+  height: 600px;
+  width: 90%;
+  border: 10px dashed #A50C8B;
+  margin-left: 25%;
+  margin: 75px;
+}
+
+ .Psych {
+  width: 500px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.Action {
+  width: 500px;
+  padding: 15px;
+  font-size: 20px;
+}
+
+#groupPic{
+  width: 500px;
+  padding-top: 50px;
+  align-self: center;
+}
+#about-us{
+  background-color: rgba(184,226,239);
+  height:950px;
+  padding: 0px;
+  margin-left: 10px;
+  border: 10px dashed #4C0B99;
+}
+.about-box{ //The whole box with pictures and text on the side
+  border: 10px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-flow: nowrap;
+  border-radius: 0px;
+  text-align: center;
+  height: 400px;
+  font-size: 15px;
+  justify-content: space-around;
+}
+#us{ /*the image in the about section */
+  object-fit: contain;
+  margin: 1%;
+  height: 700px;
+}
+.about-right{ /*all of the text to the right of the picture */
+  display:block;
+  width: 1000px;
+  font-size: 20px;
+
+}
+.about-individual{ /*the part of the about page whereitsplits into our 3 bios*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 20px;
+}
+.description{ /*each of our bios*/
+width: 500px;
+}
+
+/* parallax scrolling */
+.parallax1 {
+  /* The image itself */
+  background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/17-index-whatisfeminism-1552076366.jpg");
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2{
+  background-image: url("https://media.istockphoto.com/photos/pink-watercolor-background-on-a-white-paper-picture-id903149358?k=6&m=903149358&s=612x612&w=0&h=hRJZAFPwKhWdP_8RPHo5TQSgEjAADrUPTeZG1RJVJsU=");
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax3{
+  background-image: url("https://image.shutterstock.com/image-illustration/purple-watercolor-background-abstract-texture-260nw-709115536.jpg");
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Bios{
+  display: flex;
+  justify-content: flex-start;
+  padding: 30px;
+  align-items: center;
+}
+
+#Mara{
+  height: 300px;
+  width: 300px;
+}
+
+#maraText{
+  height: 300px;
+  width: 80%;
+  font-size: 2vw;
+  display: flex;
+  justify-content: flex-start;
+  padding: 30px;
+  align-items: center;
+}
+
+
+#Ilana{
+  height: 300px;
+  width: 300px;
+}
+
+#ilanaText{
+  height: 300px;
+  width: 80%;
+  font-size: 2vw;
+  display: flex;
+  justify-content: flex-start;
+  padding: 30px;
+  align-items: center;
+
+}
+
+
+#Abby{
+  height: 300px;
+  width: 300px;
+}
+
+#abbyText{
+  height: 300px;
+  width: 80%;
+  font-size: 2vw;
+  display: flex;
+  justify-content: flex-start;
+  padding: 30px;
+  align-items: center;
+
+}
+
+#Tara{
+  height: 300px;
+  width: 300px;
+}
+
+#taraText{
+  height: 300px;
+  width: 80%;
+  font-size: 2vw;
+  display: flex;
+  justify-content: flex-start;
+  padding: 30px;
+  align-items: center;
+}
+
+#Text{
+  width: 500px;
+  height: 30;
+  font-size: 25px
+}
+
+#interest-select{
+  width: 500px;
+  height: 30;
+  font-size: 25px;
+}
+
+#submit{
+  width: 500px;
+  height: 50px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  background-color: #4C0B99;
+  color: white;
+  border-radius: 25px
+}
+
+.headerMentor{
+  color: #4C0B99;
+  font-size: 30px;
+}
+
+.Intro-Pics{
+  font-size: 25px
+}
+
+form{
+  width: 300px;
+  margin: 0 37%;
+}
+
+.rmimage{
+  height: 300px;
+  width: 300px;
+}
+
+.mentorQuote{
+  color: #4C0B99;
+  font-size: 30px;
+}
+
+.rolemodel{
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px;
+    align-items: center;
+    font-size: 25px;
+}
+
+.getToKnow{
+  text-align: center;
+  font-size: 25px
+}
+
+.buttonOne{
+  width: 500px;
+  height: 50px;
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 10px; */
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  background-color: #4C0B99;
+  color: white;
+  border-radius: 25px
+  /* padding: 25%; */
+}
+
+.button {
+  text-align: center;
+}
+
+.newMessage{
+  font-size: 25px;
+}
+
+.meetTheDev{
+  color: #4C0B99;
+  font-size: 30px
+}
+
+#goals{
+  font-size: 25px
+}
+
+.bottom{
+  display: block;
+  justify-content: center;
+}
+
+#mentorTitle{
+  font-size: 60px;
+  text-align: center;
+  color: #58089E;
+  font-family: 'Damion', cursive;
+  background-color: white;
+  display: flex;
+  margin-top: 10%;
+  width: 700px;
+  justify-content: center;
+  margin-left: 30%;
+}
+#inspireTitle{
+  font-size: 60px;
+  text-align: center;
+  color: #58089E;
+  font-family: 'Damion', cursive;
+  background-color: white;
+  display: flex;
+  margin-top: 10%;
+  width: 700px;
+  justify-content: center;
+  margin-left: 30%;
+}
+
+.maraSection{
+  border: 10px dashed #58089E;
+}
+
+.ilanaSection{
+  border: 10px dashed purple;
+}
+
+.abbySection{
+  border: 10px dashed #58089E;
+}
+
+.taraSection{
+  border: 10px dashed purple;
+}
+
+.mentorMeet{
+  padding: 2%;
+}
+
+.googleForm{
+  display: flex;
+  justify-content: center;
+}
+
+.Hopper-Section{
+  border: 10px dashed #58089E;
+  height: 100%;
+}
+
+.Karlie-Section{
+  border: 10px dashed purple;
+  height: 100%;
+}
+
+.Mae-Section{
+  border: 10px dashed #58089E;
+  height: 100%;
+}
+
+.Marie{
+  border: 10px dashed purple;
+}
+
+.Ada{
+  border: 10px dashed #58089E;
+  height: 100%;
+}
